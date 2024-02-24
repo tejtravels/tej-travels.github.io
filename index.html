@@ -1,1 +1,104 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+        .services, .cars, .booking {
+            margin-bottom: 30px;
+        }
+        .service-item, .car-item {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .booking-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Car Rental Service</h1>
+    </header>
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>24/7 Support</h3>
+            <p>Get assistance anytime, anywhere.</p>
+        </div>
+        <div class="service-item">
+            <h3>Wide Selection</h3>
+            <p>Choose from a variety of cars to suit your needs.</p>
+        </div>
+        <div class="service-item">
+            <h3>Flexible Booking</h3>
+            <p>Book your car easily and adjust your reservation as needed.</p>
+        </div>
+    </section>
+    <section class="cars">
+        <h2>Available Cars</h2>
+        <div class="car-item">
+            <img src="https://imgd-ct.aeplcdn.com/664x415/n/cw/ec/26914/xcent-exterior-left-front-three-quarter.jpeg?q=80" alt="Car 1">
+            <h3>Car Model 1</h3>
+            <p>Price: $XX/day</p>
+        </div>
+        <div class="car-item">
+            <img src="https://imgd-ct.aeplcdn.com/664x415/n/cw/ec/26914/xcent-exterior-left-front-three-quarter.jpeg?q=80" alt="Car 2">
+            <h3>Car Model 2</h3>
+            <p>Price: $XX/day</p>
+        </div>
+        <!-- Add more car items as needed -->
+    </section>
+    <section class="booking">
+        <h2>Book Your Car</h2>
+        <div class="booking-form">
+            <form action="submit_booking.php" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="pickup_date">Pickup Date:</label><br>
+                <input type="date" id="pickup_date" name="pickup_date" required><br>
+                <label for="return_date">Return Date:</label><br>
+                <input type="date" id="return_date" name="return_date" required><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Car Rental Service</p>
+    </footer>
+</body>
+</html>
